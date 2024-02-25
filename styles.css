@@ -1,0 +1,81 @@
+/* Resetting default styles for the body */
+body {
+    margin: 0; /* Resetting margin */
+    padding: 0; /* Resetting padding */
+    font-family: 'Courier New', Courier, monospace; /* Setting font family */
+    box-sizing: border-box; /* Including padding and border in the element's total width and height */
+}
+
+/* Styling the container */
+.container {
+    width: 100%; /* Taking full width */
+    height: 100vh; /* Taking full viewport height */
+    background-color: aqua; /* Setting background color */
+    display: flex; /* Flex container */
+    align-items: center; /* Centering items vertically */
+    justify-content: center; /* Centering items horizontally */
+}
+
+/* Styling the calculator */
+.calculator {
+    background: rgb(0, 31, 63); /* Setting background color */
+    padding: 20px; /* Adding padding */
+    border-radius: 15px; /* Rounding corners */
+    border: 0; /* Removing border */
+    outline: 0; /* Removing outline */
+}
+
+/* Styling the input box */
+.calculator .input-box {
+    text-align: right; /* Aligning text to the right */
+    flex-grow: 1; /* Taking remaining space */
+    width: 100%; /* Taking full width */
+    max-width: 100%; /* Setting maximum width */
+    padding-top: 10px; /* Adding padding */
+    padding-bottom: 5px; /* Adding padding */
+    font-size: larger; /* Setting font size */
+    background: rgb(0, 31, 63); /* Setting background color */
+    color: white; /* Setting text color */
+}
+
+/* Styling the buttons */
+button {
+    padding: 20px; /* Adding padding */
+    border-radius: 30%; /* Rounding corners */
+    font-size: x-large; /* Setting font size */
+    border: 0; /* Removing border */
+    outline: 0; /* Removing outline */
+    margin: 5px; /* Adding margin */
+    width: calc(25% - 10px); /* Setting width */
+    cursor: pointer; /* Setting cursor */
+}
+
+/* Styling the delete button */
+.delBtn {
+    text-align: center; /* Centering text */
+    justify-content: center; /* Centering content */
+    display: flex; /* Flex container */
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: greenyellow; /* Changing background color on hover */
+    color: white; /* Changing text color on hover */
+}
+
+/* Styling for rows of buttons */
+.calculator div {
+    display: flex; /* Flex container */
+    justify-content: space-between; /* Distributing space evenly between items */
+}
+
+/* Styling for the zero button */
+.calculator .zeroBtn {
+    flex-grow: 1; /* Taking remaining space */
+    font-size: xx-large; /* Setting font size */
+}
+
+/* Styling for operator buttons */
+.operators {
+    background-color: #ffe4b5; /* Setting background color */
+}
